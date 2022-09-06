@@ -1,0 +1,10 @@
+.sidebar-container{
+    display: flex;
+    height: 100vh;
+    overflow: scroll initial;
+}
+
+#CDBSidebar{
+    color: #fff;
+     background-color:#333;
+}
