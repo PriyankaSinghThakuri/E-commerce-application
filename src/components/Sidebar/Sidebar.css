@@ -1,10 +1,12 @@
-.sidebar-container{
-    display: flex;
-    height: 100vh;
-    overflow: scroll initial;
-}
-
-#CDBSidebar{
+.sidebar{
     color: #fff;
-     background-color:#333;
+    background-color:rgba(65,65,65,.6)!important;
+}
+.StoreName{
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+}
+#CDBSidebarMenuItem:hover{
+    color: blue;
 }

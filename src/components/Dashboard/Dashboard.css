@@ -1,12 +1,27 @@
 .dashboard-container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 h1{
     text-align: center;
     color: green;
 }
 .saleimage{
-    width: 195vh;
-    height: 90%;
+   margin: 0rem 0rem 0rem 0rem;
+   width: 94.8rem;
+   /* max-width: 100%; */
+   height: 80vh;
+   display: block;
+}
+.freeshippingimage{
+    width: 50%;
+    height: auto;
+    padding-top: 1.5rem;
+}
+.Cards{
+    display: flex;
+    flex-direction: row;  
+}
+.Categories{
+    padding-top: 5rem;
 }

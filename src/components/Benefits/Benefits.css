@@ -1,0 +1,45 @@
+.benefits-title{
+    display: flex;
+    flex-direction: row;
+    margin: 5rem 57rem 3rem 0rem;
+}
+.horizontalLine{
+    width: 10rem;
+    height: 4rem;
+}
+h2{
+    font-size: 40px;
+    font-weight: 600;
+}
+.benefits-body{
+    background-color: rgb(218, 213, 213);
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+    padding-left: 4rem;
+}
+p{
+    
+}
+.quality-shipping-warranty{
+    display: flex;
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+.quality-shipping-warranty .row{
+  padding: 15px;
+}
+.quality{
+    flex: 100%;
+}
+
+.column img{
+  height: 40px;
+  margin-right: 3vh;
+}
+
+.shipping{
+    flex: 100%;   
+}
+.warranty{
+    flex: 100%; 
+}

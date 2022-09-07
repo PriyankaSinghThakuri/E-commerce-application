@@ -1,0 +1,10 @@
+.banner-container{
+    margin-left: 20rem;
+    padding-top: 2rem;
+    width: 55rem;
+}
+.bannerimage{
+    display: block;
+    width: 55rem;
+    height: 20rem;
+}

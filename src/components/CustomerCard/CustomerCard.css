@@ -1,0 +1,23 @@
+.card-container{
+   margin: 3rem 0rem 1rem 20rem;
+}
+
+.card{
+    width: 25rem;
+    height: 18rem;
+    background-color: rgb(224, 220, 220);
+    border-radius: 10px;
+}
+
+.card-title{
+    font-weight: 600;
+    font-size: 20px;
+}
+.globeicon{
+    width: 1.2rem;
+    color: rgb(65, 117, 212);
+}
+
+.arrowicon{
+    color: rgb(65, 117, 212);
+}

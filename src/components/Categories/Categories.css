@@ -1,0 +1,55 @@
+.Categories{
+    margin-top: -3rem;
+}
+.horizontalline{
+    width: 8rem;
+    height: 4rem;
+}
+.categories-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0rem 0rem 0rem 2rem;
+}
+.Category-Cards{
+    height: 18rem;
+    width: 25rem;
+    background-color: whitesmoke;
+    margin: 5rem 1rem 1rem 0rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+h3{
+    font-size: 40px;
+    font-weight: 600;
+    margin-right: 67rem;
+    padding-right: 5rem;
+    margin-bottom: -1rem;
+}
+a{
+    text-decoration: none;
+}
+h5{
+    margin-top: 1rem;
+    color: black;
+}
+.mobileandtabletsimage{
+    height: 13rem;
+    width: 20rem;
+}
+.computersandlaptopsimage{
+    height: 13rem;
+    width: 20rem;
+}
+.homeappliancesimage{
+    height: 13rem;
+    width: 20rem;
+}
+.smartwatchimage{
+    height: 13rem;
+    width: 20rem;
+}
+.earpodimage{
+    height: 10rem;
+    width: 15rem;
+}

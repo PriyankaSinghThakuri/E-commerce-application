@@ -1,0 +1,22 @@
+.RatingCard-container{
+    margin: 3rem 0rem 1rem 5rem;
+}
+.Card-title{
+    font-size: 25px;
+}
+.RatingCard{
+    width: 25rem;
+    height: 18rem;
+    background-color: rgb(224, 220, 220);
+    border-radius: 10px;
+}
+span{
+    padding-left: 1rem;
+}
+.Ratingbars{
+    padding: 0.5rem 1.5rem 0.5rem 1rem;
+}
+.ratingstar{
+
+    margin-left: 5rem;
+}

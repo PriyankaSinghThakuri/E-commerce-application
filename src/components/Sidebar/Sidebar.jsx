@@ -8,28 +8,33 @@ import {
   CDBSidebarMenuItem,
 } from "cdbreact";
 import { NavLink } from "react-router-dom";
+import "./Sidebar.css";
 
 const Sidebar = () => {
   return (
-    <div className="sidebar-container">
-      <CDBSidebar  >
+    <div
+      style={{
+        display: "flex",
+        height: "100vh",
+        overflow: "scroll initial",
+        position: "fixed",
+      }}
+      className="sidebar-container"
+    >
+      <CDBSidebar className="sidebar">
         <CDBSidebarHeader prefix={<i className="fa fa-bars fa-large"></i>}>
-          <a
-            href="/"
-            className="text-decoration-none"
-            style={{ color: "inherit" }}
-          >
-            e-Commerce
+          <a href="/" className="StoreName">
+            The Gadget Zone
           </a>
         </CDBSidebarHeader>
 
         <CDBSidebarContent className="sidebar-content">
           <CDBSidebarMenu>
             <NavLink exact to="/" activeClassName="activeClicked">
-              <CDBSidebarMenuItem icon="home">Home</CDBSidebarMenuItem>
+              <CDBSidebarMenuItem icon="home">HOME</CDBSidebarMenuItem>
             </NavLink>
             <NavLink exact to="/signin" activeClassName="activeClicked">
-              <CDBSidebarMenuItem icon="user">SignIn</CDBSidebarMenuItem>
+              <CDBSidebarMenuItem icon="user">SIGN IN</CDBSidebarMenuItem>
             </NavLink>
             {/* <NavLink exact to="/profile" activeClassName="activeClicked">
               <CDBSidebarMenuItem icon="user">Profile page</CDBSidebarMenuItem>
