@@ -7,6 +7,6 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #fff;
 }
-#CDBSidebarMenuItem:hover{
+#menuitem:hover{
     color: blue;
 }

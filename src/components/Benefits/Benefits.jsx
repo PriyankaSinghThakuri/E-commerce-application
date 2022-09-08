@@ -28,9 +28,8 @@ const Benefits = () => {
             <div className="quality">
               <h1>Best Quality</h1>
               <p className="text-muted">
-                All of our furniture uses the best
-                <br />
-                materials and choices for our customers.
+                We sell Quality devices and other gadget<br/> accessories.
+                All Gadgets are of well-knowned brand with good materials
               </p>
             </div>
           </div>
@@ -49,7 +48,7 @@ const Benefits = () => {
               <p className="text-muted">
                 Free Shipping everytime you
                 <br />
-                buy furniture from us without exception
+                buy Gadgets from us without exception
               </p>
             </div>
           </div>
@@ -64,8 +63,8 @@ const Benefits = () => {
             <div className="warranty">
               <h1>Warranty</h1>
               <p className="text-muted">
-                Every time you buy our furniture <br />
-                products,you will get a warranty without exception
+                Every time you buy Gadgets from  <br />our store,
+                you will get a warranty without exception
               </p>
             </div>
           </div>

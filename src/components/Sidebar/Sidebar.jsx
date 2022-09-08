@@ -31,10 +31,10 @@ const Sidebar = () => {
         <CDBSidebarContent className="sidebar-content">
           <CDBSidebarMenu>
             <NavLink exact to="/" activeClassName="activeClicked">
-              <CDBSidebarMenuItem icon="home">HOME</CDBSidebarMenuItem>
+              <CDBSidebarMenuItem icon="home" id="menuitem">HOME</CDBSidebarMenuItem>
             </NavLink>
             <NavLink exact to="/signin" activeClassName="activeClicked">
-              <CDBSidebarMenuItem icon="user">SIGN IN</CDBSidebarMenuItem>
+              <CDBSidebarMenuItem icon="user" id="menuitem">SIGN IN</CDBSidebarMenuItem>
             </NavLink>
             {/* <NavLink exact to="/profile" activeClassName="activeClicked">
               <CDBSidebarMenuItem icon="user">Profile page</CDBSidebarMenuItem>
@@ -54,10 +54,10 @@ const Sidebar = () => {
             <CDBSidebarMenu>
               <CDBSidebarContent>
                 <NavLink exact to="/" activeClassName="activeClicked">
-                  <CDBSidebarMenuItem icon="question">Help</CDBSidebarMenuItem>
+                  <CDBSidebarMenuItem icon="question" id="menuitem">Help</CDBSidebarMenuItem>
                 </NavLink>
                 <NavLink exact to="/" activeClassName="activeClicked">
-                  <CDBSidebarMenuItem icon="book">
+                  <CDBSidebarMenuItem icon="book" id="menuitem">
                     Contact Us
                   </CDBSidebarMenuItem>
                 </NavLink>
