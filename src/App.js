@@ -19,7 +19,7 @@ function App() {
     <AuthProvider>
       <div className="App">
         <Routes>
-          <Route path="/" element={<Dashboard />}>
+          <Route path="/E-commerce-application" element={<Dashboard />}>
             <Route path="mobileandtablets" element={<MobileandTablets />} />
             <Route path="computerandlaptops" element={<ComputerAndLaptops />} />
             <Route path="homeappliances" element={<HomeAppliances />} />

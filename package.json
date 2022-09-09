@@ -2,7 +2,7 @@
   "name": "task1",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://PriyankaSinghThakuri.github.io/E-commerce-application/",
+  "homepage": "https://priyankasinghthakuri.github.io/e-commerce-application/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.0",
     "@fortawesome/free-brands-svg-icons": "^6.2.0",
