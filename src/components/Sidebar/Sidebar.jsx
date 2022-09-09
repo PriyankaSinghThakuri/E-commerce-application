@@ -8,9 +8,11 @@ import {
   CDBSidebarMenuItem,
 } from "cdbreact";
 import { NavLink } from "react-router-dom";
+import { useAuth } from "../Auth";
 import "./Sidebar.css";
 
 const Sidebar = () => {
+  const auth = useAuth();
   return (
     <div
       style={{
@@ -30,16 +32,25 @@ const Sidebar = () => {
 
         <CDBSidebarContent className="sidebar-content">
           <CDBSidebarMenu>
-            <NavLink exact to="/" activeClassName="activeClicked">
-              <CDBSidebarMenuItem icon="home" id="menuitem">HOME</CDBSidebarMenuItem>
+            <NavLink to="/">
+              <CDBSidebarMenuItem icon="home" id="menuitem">
+                HOME
+              </CDBSidebarMenuItem>
             </NavLink>
-            <NavLink exact to="/signin" activeClassName="activeClicked">
-              <CDBSidebarMenuItem icon="user" id="menuitem">SIGN IN</CDBSidebarMenuItem>
+            {!auth.user && (
+              <NavLink to="signin">
+                <CDBSidebarMenuItem icon="user" id="menuitem">
+                  SIGN IN
+                </CDBSidebarMenuItem>
+              </NavLink>
+            )}
+            <NavLink to="profile">
+              <CDBSidebarMenuItem icon="user" id="menuitem">
+                PROFILE
+              </CDBSidebarMenuItem>
             </NavLink>
-            {/* <NavLink exact to="/profile" activeClassName="activeClicked">
-              <CDBSidebarMenuItem icon="user">Profile page</CDBSidebarMenuItem>
-            </NavLink>
-            <NavLink exact to="/analytics" activeClassName="activeClicked">
+
+            {/* <NavLink exact to="/analytics" activeClassName="activeClicked">
               <CDBSidebarMenuItem icon="chart-line">Analytics</CDBSidebarMenuItem>
             </NavLink>
 
@@ -53,10 +64,12 @@ const Sidebar = () => {
           <div className="sidebar-footer">
             <CDBSidebarMenu>
               <CDBSidebarContent>
-                <NavLink exact to="/" activeClassName="activeClicked">
-                  <CDBSidebarMenuItem icon="question" id="menuitem">Help</CDBSidebarMenuItem>
+                <NavLink to="/">
+                  <CDBSidebarMenuItem icon="question" id="menuitem">
+                    Help
+                  </CDBSidebarMenuItem>
                 </NavLink>
-                <NavLink exact to="/" activeClassName="activeClicked">
+                <NavLink to="/">
                   <CDBSidebarMenuItem icon="book" id="menuitem">
                     Contact Us
                   </CDBSidebarMenuItem>

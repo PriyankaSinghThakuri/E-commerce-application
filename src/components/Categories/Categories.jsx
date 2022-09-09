@@ -1,7 +1,12 @@
 import React from "react";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Link, Outlet } from "react-router-dom";
 import "./Categories.css";
+// import MobileandTablets from "../Categories/MobileAndTablets/MobileAndtablets";
+// import ComputerAndLaptops from "../Categories/ComputersandLaptops/ComputersandTablets";
+// import HomeAppliances from "../Categories/MobileAndTablets/MobileAndtablets";
+// import SmartWatches from "../Categories/SmartWatches/SmartWatches";
 
 const Categories = () => {
   return (
@@ -15,7 +20,7 @@ const Categories = () => {
       </h3>
       <div className="categories-container">
         <div className="Category-Cards">
-          <a href="/signin">
+          <Link to="/signin">
             <img
               src={
                 process.env.PUBLIC_URL +
@@ -25,10 +30,11 @@ const Categories = () => {
               className="mobileandtabletsimage"
             />
             <h5>Mobile & Tablets</h5>
-          </a>
+          </Link>
+          {/* <MobileandTablets/> */}
         </div>
         <div className="Category-Cards">
-          <a href="/signin">
+          <Link to="/signin">
             <img
               src={
                 process.env.PUBLIC_URL +
@@ -38,10 +44,11 @@ const Categories = () => {
               className="computersandlaptopsimage"
             />
             <h5>Computers & Laptops</h5>
-          </a>
+          </Link>
+          {/* <ComputerAndLaptops/> */}
         </div>
         <div className="Category-Cards">
-          <a href="/signin">
+          <Link to="/signin">
             <img
               src={
                 process.env.PUBLIC_URL + "/assets/categories/homeappliances.png"
@@ -50,19 +57,22 @@ const Categories = () => {
               className="homeappliancesimage"
             />
             <h5>Home appliances</h5>
-          </a>
+          </Link>
+          {/* <HomeAppliances/> */}
         </div>
         <div className="Category-Cards">
-          <a href="/signin">
+          <Link to="/signin">
             <img
               src={process.env.PUBLIC_URL + "/assets/categories/smartwatch.png"}
               alt="Responsive image"
               className="smartwatchimage"
             />
             <h5>SmartWatches</h5>
-          </a>
+          </Link>
+          {/* <SmartWatches/> */}
         </div>
       </div>
+      <Outlet />
     </div>
   );
 };

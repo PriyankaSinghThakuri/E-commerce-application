@@ -3,10 +3,12 @@ import "bootstrap/dist/js/bootstrap.min.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { useAuth } from "../Auth";
 import "./Signin.css";
 import axios from "axios";
 
 const Signin = () => {
+  const auth = useAuth();
   const navigate = useNavigate();
 
   const userRef = useRef();
@@ -14,32 +16,34 @@ const Signin = () => {
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [errMsg, setErrMsg] = useState("");
+  const [error, setError] = useState("");
+
 
   useEffect(() => {
     userRef.current.focus();
   }, []);
 
   useEffect(() => {
-    setErrMsg("");
+    setError("");
   }, [email, password]);
 
   const handlelogin = async (e) => {
     e.preventDefault();
     try {
-      let res = await axios.post(
-        "https://paradoxbackend.herokuapp.com/users/login/",
-        {
-          email: email,
-          password: password,
-        }
-      );
+      // let res = await axios.post(
+      //   "https://paradoxbackend.herokuapp.com/users/login/",
+      //   {
+      //     email: email,
+      //     password: password,
+      //   }
+      // );
 
       alert("Successfully Logged in");
+      auth.login(email, password);
       // 👇️ navigate to /profile
       navigate("/");
       // setting the data to localstorage where first parameter is name of data and 2nd parameter is data from response
-      localStorage.setItem("Login_details", JSON.stringify(res.data));
+      // localStorage.setItem("Login_details", JSON.stringify(res.data));
     } catch (error) {
       alert("Failed to login");
     }
@@ -54,13 +58,7 @@ const Signin = () => {
   return (
     <div className="login-form">
       <h1 className="title">Login</h1>
-      <p
-        ref={errRef}
-        className={errMsg ? "errMsg" : "offscreen"}
-        aria-live="assertive"
-      >
-        {errMsg}
-      </p>
+      {error && <div style={{ color: "red" }}>{error}</div>}
       <form>
         <div className="email">
           <input
@@ -98,6 +96,10 @@ const Signin = () => {
           </p>
         </div>
       </form>
+
+      <button className="Back-btn" onClick={() => navigate(-1)}>
+        Go Back
+      </button>
     </div>
   );
 };
