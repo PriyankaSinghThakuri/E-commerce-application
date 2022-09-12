@@ -2,6 +2,7 @@ import React from "react";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useState, useRef, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 import "./Signup.css";
 import axios from "axios";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -94,9 +95,9 @@ const Signup = () => {
           <div className="login-link">
             <p>
               Already have an account?
-              <a href="/signin">
+              <NavLink to="/signin">
                 Log In
-              </a>
+              </NavLink>
             </p>
           </div>
           <h4 className="text-muted">Or Sign Up with</h4>

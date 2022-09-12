@@ -5,6 +5,7 @@ import { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../Auth";
 import "./Signin.css";
+import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF, faGoogle } from "@fortawesome/free-brands-svg-icons";
 import { faBackward } from "@fortawesome/free-solid-svg-icons";
@@ -90,9 +91,7 @@ const Signin = () => {
           <div className="register-link">
             <p>
               Don't have an account?
-              <a href="/signup">
-                Sign Up
-              </a>
+              <NavLink to="/signup">Sign Up</NavLink>
             </p>
           </div>
         </form>
