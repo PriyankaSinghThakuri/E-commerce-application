@@ -1,5 +1,4 @@
 import React from "react";
-import { Tag } from "sale-tag";
 import "./TopSeller.css";
 
 const TopSeller = () => {
@@ -8,7 +7,6 @@ const TopSeller = () => {
       <h2>Top Seller of Gadget Zone</h2>
       <div className="line">
         <div className="topseller-card">
-          <Tag text={"SALE"} disable={false} />
           <img
             src={
               process.env.PUBLIC_URL +
@@ -20,7 +18,6 @@ const TopSeller = () => {
           />
         </div>
         <div className="flashsale-card">
-          <Tag text={"SALE"} disable={false} />
           <img
             src={
               process.env.PUBLIC_URL +
@@ -32,7 +29,6 @@ const TopSeller = () => {
           />
         </div>
         <div className="flashsale-card">
-          <Tag text={"SALE"} disable={false} />
           <img
             src={
               process.env.PUBLIC_URL +
@@ -44,7 +40,6 @@ const TopSeller = () => {
           />
         </div>
         <div className="flashsale-card">
-          <Tag text={"SALE"} disable={false} />
           <img
             src={
               process.env.PUBLIC_URL +
@@ -56,7 +51,6 @@ const TopSeller = () => {
           />
         </div>
         <div className="flashsale-card">
-          <Tag text={"SALE"} disable={false} />
           <img
             src={
               process.env.PUBLIC_URL +
@@ -70,7 +64,6 @@ const TopSeller = () => {
       </div>
       <div className="line">
         <div className="topseller-card">
-          <Tag text={"SALE"} disable={false} />
           <img
             src={
               process.env.PUBLIC_URL +
@@ -82,7 +75,6 @@ const TopSeller = () => {
           />
         </div>
         <div className="flashsale-card">
-          <Tag text={"SALE"} disable={false} />
           <img
             src={
               process.env.PUBLIC_URL +
@@ -94,7 +86,6 @@ const TopSeller = () => {
           />
         </div>
         <div className="flashsale-card">
-          <Tag text={"SALE"} disable={false} />
           <img
             src={
               process.env.PUBLIC_URL +
@@ -106,7 +97,6 @@ const TopSeller = () => {
           />
         </div>
         <div className="flashsale-card">
-          <Tag text={"SALE"} disable={false} />
           <img
             src={
               process.env.PUBLIC_URL +
@@ -118,7 +108,6 @@ const TopSeller = () => {
           />
         </div>
         <div className="flashsale-card">
-          <Tag text={"SALE"} disable={false} />
           <img
             src={
               process.env.PUBLIC_URL +
@@ -132,7 +121,6 @@ const TopSeller = () => {
       </div>
       <div className="line">
         <div className="topseller-card">
-          <Tag text={"SALE"} disable={false} />
           <img
             src={
               process.env.PUBLIC_URL +
@@ -144,7 +132,6 @@ const TopSeller = () => {
           />
         </div>
         <div className="flashsale-card">
-          <Tag text={"SALE"} disable={false} />
           <img
             src={
               process.env.PUBLIC_URL +
@@ -156,7 +143,6 @@ const TopSeller = () => {
           />
         </div>
         <div className="flashsale-card">
-          <Tag text={"SALE"} disable={false} />
           <img
             src={
               process.env.PUBLIC_URL +
@@ -168,7 +154,6 @@ const TopSeller = () => {
           />
         </div>
         <div className="flashsale-card">
-          <Tag text={"SALE"} disable={false} />
           <img
             src={
               process.env.PUBLIC_URL +
@@ -180,7 +165,6 @@ const TopSeller = () => {
           />
         </div>
         <div className="flashsale-card">
-          <Tag text={"SALE"} disable={false} />
           <img
             src={
               process.env.PUBLIC_URL +
@@ -194,7 +178,6 @@ const TopSeller = () => {
       </div>
       <div className="line">
         <div className="topseller-card">
-          <Tag text={"SALE"} disable={false} />
           <img
             src={
               process.env.PUBLIC_URL +
@@ -206,7 +189,6 @@ const TopSeller = () => {
           />
         </div>
         <div className="flashsale-card">
-          <Tag text={"SALE"} disable={false} />
           <img
             src={
               process.env.PUBLIC_URL +
@@ -218,7 +200,6 @@ const TopSeller = () => {
           />
         </div>
         <div className="flashsale-card">
-          <Tag text={"SALE"} disable={false} />
           <img
             src={
               process.env.PUBLIC_URL +
@@ -230,7 +211,6 @@ const TopSeller = () => {
           />
         </div>
         <div className="flashsale-card">
-          <Tag text={"SALE"} disable={false} />
           <img
             src={
               process.env.PUBLIC_URL +
@@ -242,7 +222,6 @@ const TopSeller = () => {
           />
         </div>
         <div className="flashsale-card">
-          <Tag text={"SALE"} disable={false} />
           <img
             src={
               process.env.PUBLIC_URL +
