@@ -1,0 +1,46 @@
+.category_banners-container{
+    display: flex;
+    flex-direction: column;
+}
+.appliances{
+    display: flex; 
+    flex-direction: row;
+}
+.smartphone-img{
+    width: 80%;
+    cursor: pointer;
+}
+.largehomeappliances-img{
+    height: 80%;
+    width: 70%;
+    margin: 0.5rem -4rem 0rem 7rem;
+    cursor: pointer;
+}
+.home-appliances{
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem -10rem 0rem 1.7rem;
+}
+.samllappliances-img{
+    width: 80%;
+    height: 39%;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+.juicer-img{
+    width: 80%;
+    height: 39%;
+    margin: -0.5rem 0rem 0rem 0rem;
+    cursor: pointer;
+}
+.washingmachine-img{
+    height: 79%;
+    width: 68%;
+    margin: 0.5rem 0rem 0rem -6.5rem;
+    cursor: pointer;
+}
+.tv-img{
+    width: 80%;
+    margin: -4.5rem 0rem 0rem 0rem;
+    cursor: pointer;
+}

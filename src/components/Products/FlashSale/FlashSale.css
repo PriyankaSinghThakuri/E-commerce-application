@@ -1,0 +1,23 @@
+.flashsale-container{
+    display: flex;
+    background-color: rgb(211,211,211);
+    margin-bottom: 2rem;
+    align-content: center;
+    padding: 2rem 0rem 7rem 0rem;
+
+}
+.flashsale-card{
+    margin: 0rem 1rem 1rem 1.5rem;
+    position: relative;
+    height: 15rem;
+    width: 18rem;
+    background-color: #fff;
+    position: sticky;
+}
+.flashsale_img{
+    height: 80%;
+    width: 70%;
+}
+.product_descp{
+    margin-top: 3rem;
+}

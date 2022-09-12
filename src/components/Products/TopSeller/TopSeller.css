@@ -1,0 +1,38 @@
+h2{
+    font-size: 30px;
+    font-family: Lucida Console;
+    letter-spacing: 0.1rem;
+    text-align: left;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+}
+
+.topseller-container{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(211,211,211);
+    margin-bottom: 2rem;
+    align-content: center;
+    margin-top: -0.5rem;
+    padding: 2rem 0rem 7rem 0rem;
+    margin-top: 1rem;
+}
+
+.topseller-card{
+    margin: 0rem 1rem 1rem 1.5rem;
+    position: relative;
+    height: 15rem;
+    width: 18rem;
+    background-color: #fff;
+    position: sticky;
+}
+.line{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 1.5rem;
+}
+.topseller_img{
+    height: 80%;
+    width: 70%;
+}
+

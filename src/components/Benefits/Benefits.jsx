@@ -6,8 +6,10 @@ const Benefits = () => {
     <div className="benefits">
       {/* <!-- Benefits --> */}
       <div className="benefits-title">
-        <img src={process.env.PUBLIC_URL + "/assets/horizontalLine.png"} 
-        className="horizontalLine"/>
+        <img
+          src={process.env.PUBLIC_URL + "/assets/horizontalLine.png"}
+          className="horizontalLine"
+        />
         <h2>
           Benefits you get when
           <br />
@@ -24,12 +26,12 @@ const Benefits = () => {
                 }
               />
             </div>
-
             <div className="quality">
               <h1>Best Quality</h1>
               <p className="text-muted">
-                We sell Quality devices and other gadget<br/> accessories.
-                All Gadgets are of well-knowned brand with good materials
+                We sell Quality devices and other gadget
+                <br /> accessories. All Gadgets are of well-knowned brand with
+                good materials
               </p>
             </div>
           </div>
@@ -63,8 +65,8 @@ const Benefits = () => {
             <div className="warranty">
               <h1>Warranty</h1>
               <p className="text-muted">
-                Every time you buy Gadgets from  <br />our store,
-                you will get a warranty without exception
+                Every time you buy Gadgets from <br />
+                our store, you will get a warranty without exception
               </p>
             </div>
           </div>

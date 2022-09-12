@@ -8,7 +8,7 @@ const Profile = () => {
 
   const handleSignout = () => {
     auth.logout();
-    navigate("/");
+    navigate("/e-commerce-application");
   };
   return (
     <div>

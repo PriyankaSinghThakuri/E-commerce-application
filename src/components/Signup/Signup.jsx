@@ -4,6 +4,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { useState, useRef, useEffect } from "react";
 import "./Signup.css";
 import axios from "axios";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebookF, faGoogle } from "@fortawesome/free-brands-svg-icons";
 
 const Signup = () => {
   const userRef = useRef();
@@ -43,64 +45,71 @@ const Signup = () => {
     setPassword("");
   };
   return (
-    <div className="signup-form">
-      <h1 className="title">SignUp</h1>
-      <p
-        ref={errRef}
-        className={errMsg ? "errMsg" : "offscreen"}
-        aria-live="assertive"
-      >
-        {errMsg}
+    <div className="signup">
+      <h2 className="title">New Customer Registration</h2>
+      <p style={{ textAlign: "center", marginLeft: "0.5rem" }}>
+        Create an account to experience faster shopping
       </p>
-      <form>
-        <div className="username">
-          <input
-            type="text"
-            required="required"
-            ref={userRef}
-            autoComplete="false"
-            className="input-username"
-            placeholder="username"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-          />
-        </div>
-        <div className="email">
-          <input
-            type="email"
-            required="required"
-            ref={userRef}
-            autoComplete="false"
-            className="input-email"
-            placeholder="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-        </div>
-        <div className="password">
-          <input
-            type="password"
-            required="required"
-            ref={userRef}
-            autoComplete="false"
-            className="input-password"
-            placeholder="Password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-        </div>
-        <button className="signup-btn" onClick={handleSignup}>
-          Sign In
-        </button>
-        <div className="login-link">
-          <p>
-            Already have an account?
-            <a href="/signin" className="login">
-              Log In
-            </a>
-          </p>
-        </div>
-      </form>
+      <div className="signup-form">
+        <form>
+          <div className="username">
+            <input
+              type="text"
+              required="required"
+              ref={userRef}
+              autoComplete="false"
+              className="input-username"
+              placeholder="username"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+            />
+          </div>
+          <div className="email">
+            <input
+              type="email"
+              required="required"
+              ref={userRef}
+              autoComplete="false"
+              className="input-email"
+              placeholder="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </div>
+          <div className="password">
+            <input
+              type="password"
+              required="required"
+              ref={userRef}
+              autoComplete="false"
+              className="input-password"
+              placeholder="Password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+          </div>
+          <button className="signup-btn" onClick={handleSignup}>
+            Sign Up
+          </button>
+          <div className="login-link">
+            <p>
+              Already have an account?
+              <a href="/signin">
+                Log In
+              </a>
+            </p>
+          </div>
+          <h4 className="text-muted">Or Sign Up with</h4>
+          <div className="signin-icons">
+            <FontAwesomeIcon
+              icon={faFacebookF}
+              className="mediaicon"
+              size="2x"
+            />
+            <FontAwesomeIcon icon={faGoogle} className="mediaicon" size="2x" />
+          </div>
+        </form>
+      </div>
     </div>
   );
 };

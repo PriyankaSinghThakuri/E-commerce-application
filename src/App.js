@@ -9,22 +9,15 @@ import Profile from "./components/Profile/Profile";
 import NoMatchPage from "./components/NoMatchPage/NoMatchPage";
 import Users from "./components/Users/Users";
 import Admin from "./components/Admin/Admin";
-import MobileandTablets from "./components/Categories/MobileAndTablets/MobileAndTablets";
-import ComputerAndLaptops from "./components/Categories/ComputersandLaptops/ComputersandTablets";
-import HomeAppliances from "./components/Categories/HomeAppliances/HomeAppliances";
-import SmartWatches from "./components/Categories/SmartWatches/SmartWatches";
+import Home from "./components/Home/Home";
 
 function App() {
   return (
     <AuthProvider>
+      {/* <NavBar/> */}
       <div className="App">
         <Routes>
-          <Route path="/e-commerce-application" element={<Dashboard />}>
-            <Route path="mobileandtablets" element={<MobileandTablets />} />
-            <Route path="computerandlaptops" element={<ComputerAndLaptops />} />
-            <Route path="homeappliances" element={<HomeAppliances />} />
-            <Route path="smartwatches" element={<SmartWatches />} />
-          </Route>
+          <Route path="/e-commerce-application" element={<Home />} />
           <Route path="signin" element={<Signin />} />
           <Route path="signup" element={<Signup />} />
 
@@ -34,6 +27,14 @@ function App() {
             element={
               <RequireAuth>
                 <Profile />
+              </RequireAuth>
+            }
+          />
+          <Route
+            path="dashboard"
+            element={
+              <RequireAuth>
+                <Dashboard />
               </RequireAuth>
             }
           />

@@ -34,19 +34,19 @@ const Sidebar = () => {
           <CDBSidebarMenu>
             <NavLink to="/">
               <CDBSidebarMenuItem icon="home" id="menuitem">
-                HOME
+                Dashboard
               </CDBSidebarMenuItem>
             </NavLink>
             {!auth.user && (
               <NavLink to="signin">
                 <CDBSidebarMenuItem icon="user" id="menuitem">
-                  SIGN IN
+                 Customers
                 </CDBSidebarMenuItem>
               </NavLink>
             )}
             <NavLink to="profile">
               <CDBSidebarMenuItem icon="user" id="menuitem">
-                PROFILE
+                Vendors
               </CDBSidebarMenuItem>
             </NavLink>
 
