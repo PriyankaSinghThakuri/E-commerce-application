@@ -72,6 +72,9 @@
     height: 1.5rem;
     width: 2rem;
 }
+.search-btn:hover{
+    background-color: rgb(163, 114, 204);
+}
 .cart-icon{
     height: 2.5rem;
     width: 3rem;

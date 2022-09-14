@@ -7,9 +7,10 @@ import Signup from "./components/Signup/Signup";
 import Dashboard from "./components/Dashboard/Dashboard";
 import Profile from "./components/Profile/Profile";
 import NoMatchPage from "./components/NoMatchPage/NoMatchPage";
-import Users from "./components/Users/Users";
+import Users from "./components/Users/Customers";
 import Admin from "./components/Admin/Admin";
 import Home from "./components/Home/Home";
+import Customers from "./components/Users/Customers";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
               </RequireAuth>
             }
           />
+          <Route path="customers" element={<Customers />} />
           <Route path="admin" element={<Admin />}>
             <Route path="users" element={<Users />} />
           </Route>

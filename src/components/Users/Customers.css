@@ -1,0 +1,117 @@
+.app-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1rem;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 70%;
+  }
+  
+  th,td {
+    border: 1px solid #ffffff;
+    text-align: left;
+    padding: 8px;
+    font-size: 32px;
+  }
+  
+  th {
+    background-color: rgb(117, 201, 250);
+  }
+  
+  td {
+    background-color: rgb(205, 235, 253);
+  }
+  
+  form {
+    display: flex;
+    gap: 5px;
+  }
+  
+  form td:last-child {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  form * {
+    font-size: 28px;
+  }
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1rem;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th,
+  td {
+    border: 1px solid #ffffff;
+    text-align: left;
+    padding: 8px;
+    font-size: 32px;
+  }
+  
+  th {
+    background-color: rgb(117, 201, 250);
+  }
+  
+  td {
+    background-color: rgb(205, 235, 253);
+  }
+  
+  form {
+    display: flex;
+    gap: 5px;
+  }
+  
+  form td:last-child {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  form * {
+    font-size: 19px;
+  }
+  #cust-name{
+    height: 3.5rem;
+    width: 20rem;
+  }
+  #cust-address{
+    height: 3.5rem;
+    width: 20rem;
+  }
+  #cust-email{
+    height: 3.5rem;
+    width: 20rem;
+  }
+  #cust-number{
+    height: 3.5rem;
+    width: 20rem;
+  }
+  .add-btn{
+    height: 3.5rem;
+    width: 5.5rem;
+    background-color: rgb(131, 185, 243);
+  }
+  .add-btn:hover{
+    background-color: rgb(17, 131, 202);
+  }
+  .edit-btn{
+    background-color: rgb(131, 185, 243);
+  }
+  .edit-btn:hover{
+    background-color: rgb(17, 131, 202);
+  }
+  .delete-btn{
+    background-color: rgb(131, 185, 243);
+  }
+  .delete-btn:hover{
+    background-color: rgb(17, 131, 202);
+  }
