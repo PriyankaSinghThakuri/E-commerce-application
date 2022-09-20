@@ -1,0 +1,38 @@
+  [
+    {
+      "image":
+        "http://localhost:3000/e-commerce-application/assets/produtcs_images/flashsale_images/flashSale1.jpg",
+      "prodname": "TULIP JOLLY Hot and Cold Water Dispenser - TWD-3",
+      "price_beforesale": "रू 8880",
+      "price_aftersale": "रू 6583"
+    },
+    {
+      "image":
+        "http://localhost:3000/e-commerce-application/assets/produtcs_images/flashsale_images/flashSale2.jpg",
+      "prodname": " DIZO Smart Watch 2 (DW2118)",
+      "price_beforesale": "रू 5000",
+      "price_aftersale": "रू 4999"
+    },
+    {
+      "image":
+        "http://localhost:3000/e-commerce-application/assets/produtcs_images/flashsale_images/flashSale3.jpg",
+      "prodname": "Imars VSUN 6 / 1 GB RAM / 16GB ROM - 2200 mAh Battery",
+      "price_beforesale": "रू 13999",
+      "price_aftersale": "रू 8000"
+    },
+    {
+      "image":
+        "http://localhost:3000/e-commerce-application/assets/produtcs_images/flashsale_images/flashSale4.png",
+      "prodname":
+        "Get Havells Hand Blender Free on GEM 6.8 KG Semi Automatic Washing Machine (Combo)",
+      "price_beforesale": "रू 22500",
+      "price_aftersale": "रू 19990"
+    },
+    {
+      "image":
+        "http://localhost:3000/e-commerce-application/assets/produtcs_images/flashsale_images/flashSale5.jpg",
+      "prodname": "Aura 1600 Watt Vacuum",
+      "price_beforesale": "रू 8000",
+      "price_aftersale": "रू 7800"
+    }
+  ]

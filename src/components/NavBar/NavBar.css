@@ -21,7 +21,7 @@
 }
 /* css of navbar inner components */
 .navbar-nav a{
-    margin: 0rem 1.5rem 0rem 0rem;  
+    margin: 0rem 1rem 0rem 0rem; 
     cursor: pointer;
 }
 .navbar-nav a:hover{

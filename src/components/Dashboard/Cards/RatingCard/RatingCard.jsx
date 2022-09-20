@@ -5,11 +5,11 @@ import "./RatingCard.css";
 const RatingCard = () => {
   return (
     <div className="RatingCard-container">
-      <div className="RatingCard">
+      <div className="RatingCard" style={{ width: "25rem", height: "19rem"}}>
         <div className="ratingstar">
           <CDBRating />
         </div>
-        <CDBCardBody>
+        <CDBCardBody  className="ratingcard-body">
           <h2 className="Card-title">Average Rating</h2>
           <h1>4.7</h1>
 

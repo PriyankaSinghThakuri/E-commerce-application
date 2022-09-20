@@ -5,17 +5,18 @@ import { AuthProvider } from "./components/Auth";
 import RequireAuth from "./components/RequireAuth";
 import Signup from "./components/Signup/Signup";
 import Dashboard from "./components/Dashboard/Dashboard";
-import Profile from "./components/Profile/Profile";
 import NoMatchPage from "./components/NoMatchPage/NoMatchPage";
 import Users from "./components/Users/Customers";
 import Admin from "./components/Admin/Admin";
 import Home from "./components/Home/Home";
 import Customers from "./components/Users/Customers";
+import FlashSale from "./components/Products/FlashSale/FlashSale";
+import { TermsConditions } from "./components/NavBar/TermsConditions";
+import { Trackorder } from "../src/components/Trackorder";
 
 function App() {
   return (
     <AuthProvider>
-      {/* <NavBar/> */}
       <div className="App">
         <Routes>
           <Route path="/e-commerce-application" element={<Home />} />
@@ -23,26 +24,22 @@ function App() {
           <Route path="signup" element={<Signup />} />
 
           {/* Protected Routes */}
-          <Route
-            path="profile"
-            element={
-              <RequireAuth>
-                <Profile />
-              </RequireAuth>
-            }
-          />
-          <Route
+          {/* <Route
             path="dashboard"
             element={
               <RequireAuth>
                 <Dashboard />
               </RequireAuth>
             }
-          />
+          /> */}
+          <Route path="dashboard" element={<Dashboard />} />
           <Route path="customers" element={<Customers />} />
           <Route path="admin" element={<Admin />}>
             <Route path="users" element={<Users />} />
           </Route>
+          <Route path="flashsale" element={<FlashSale />} />
+          <Route path="termsconditions" element={<TermsConditions />} />
+          <Route path="/trackmyorder" component={Trackorder} />
 
           {/* if URL is not found */}
           <Route path="*" element={<NoMatchPage />} />

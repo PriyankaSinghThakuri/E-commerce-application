@@ -37,26 +37,24 @@ const Sidebar = () => {
                 Dashboard
               </CDBSidebarMenuItem>
             </NavLink>
+            <NavLink to="profile">
+              <CDBSidebarMenuItem icon="user">Profile</CDBSidebarMenuItem>
+            </NavLink>
+            <NavLink to="customers">
+              <CDBSidebarMenuItem icon="user">Customers</CDBSidebarMenuItem>
+            </NavLink>
+            <NavLink to="customers">
+              <CDBSidebarMenuItem icon="chart-line">
+                Customers
+              </CDBSidebarMenuItem>
+            </NavLink>
             {!auth.user && (
               <NavLink to="signin">
                 <CDBSidebarMenuItem icon="user" id="menuitem">
-                 Customers
+                  login
                 </CDBSidebarMenuItem>
               </NavLink>
             )}
-            <NavLink to="profile">
-              <CDBSidebarMenuItem icon="user" id="menuitem">
-                Vendors
-              </CDBSidebarMenuItem>
-            </NavLink>
-
-            <NavLink exact to="customers">
-              <CDBSidebarMenuItem icon="chart-line">Customers</CDBSidebarMenuItem>
-            </NavLink>
-
-            {/* <NavLink exact to="/hero404" target="_blank" activeClassName="activeClicked">
-              <CDBSidebarMenuItem icon="exclamation-circle">404 page</CDBSidebarMenuItem>
-            </NavLink> */}
           </CDBSidebarMenu>
         </CDBSidebarContent>
 

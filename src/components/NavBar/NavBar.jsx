@@ -5,9 +5,12 @@ import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../../../node_modules/bootstrap/dist/js/bootstrap.min.js";
 import { faCartPlus, faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useState } from "react";
+import { Trackorder } from "../Trackorder";
 
 function NavBar() {
   var [toggle, settoggle] = React.useState(0.5);
+  const [isShow, setShow] = useState(false);
 
   function makeBlur() {
     if (toggle == 0.5) {
@@ -17,6 +20,7 @@ function NavBar() {
     }
     document.body.style.opacity = toggle;
   }
+
   return (
     <div className="nav">
       {/* navbar starts */}
@@ -38,18 +42,30 @@ function NavBar() {
           {/* navbar components */}
           <div className="collapse navbar-collapse" id="navbarNav">
             <div className="navbar-nav">
-              <NavLink to="#" className=" nav-link active">
+              <NavLink to="/flashsale" className=" nav-link active">
                 SELL ON GADGET ZONE
                 <span className="px-2" id="gadgetzone_new">
                   new
                 </span>
               </NavLink>
-              <NavLink to="#" className="nav-link active">
-                CUSTOMER CARE
+              <NavLink to="/termsconditions" className="nav-link active">
+                TERMS & CONDITIONS
               </NavLink>
-              <NavLink to="#" className="nav-link active">
+
+              <NavLink
+                to="#trackorder"
+                className="nav-link active"
+                onClick={() => {
+                  setShow(!isShow);
+                }}
+              >
                 TRACK MY ORDER
               </NavLink>
+              {isShow && (
+                <div style={{ marginBottom: "-20rem" }}>
+                  <Trackorder />
+                </div>
+              )}
               <NavLink to="/signin" className="nav-link active">
                 LOG IN
               </NavLink>

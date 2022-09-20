@@ -1,14 +1,17 @@
 .RatingCard-container{
-    margin: 3rem 0rem 1rem 5rem;
+    margin: 5rem 0rem 1rem 8rem;
 }
 .Card-title{
     font-size: 25px;
+    padding-left: 5rem;
+    margin-bottom: -0.5rem;
 }
 .RatingCard{
-    width: 25rem;
-    height: 18rem;
     background-color: rgb(224, 220, 220);
     border-radius: 10px;
+}
+.ratingcard-body{
+    margin-top: 0.5rem;
 }
 span{
     padding-left: 1rem;

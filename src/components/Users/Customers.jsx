@@ -113,7 +113,7 @@ const App = () => {
 
   return (
     <div className="app-container">
-      <h1>Our Customers</h1>
+      <h1 style={{padding: "1rem"}}>Our Customers</h1>
       <form onSubmit={handleEditFormSubmit}>
         <table>
           <thead>
@@ -147,8 +147,8 @@ const App = () => {
         </table>
       </form>
 
-      <h2 style={{paddingTop: "1rem"}}>Add a Customer</h2>
-      <form onSubmit={handleAddFormSubmit}>
+      <h2 style={{padding: "1rem"}}>Add a Customer</h2>
+      <form onSubmit={handleAddFormSubmit} className="cust-form">
         <input
           type="text"
           name="fullName"

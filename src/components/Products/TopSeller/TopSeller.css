@@ -18,13 +18,17 @@ h2{
     margin-top: 1rem;
 }
 
-.topseller-card{
+.topseller-card{  
     margin: 0rem 1rem 1rem 1.5rem;
     position: relative;
     height: 15rem;
     width: 18rem;
     background-color: #fff;
     position: sticky;
+    cursor: pointer;
+}
+.topseller-card:hover{
+    background-color: rgb(184, 231, 231);
 }
 .line{
     display: flex;
@@ -34,5 +38,11 @@ h2{
 .topseller_img{
     height: 80%;
     width: 70%;
+}
+p{
+    cursor: pointer;
+}
+p:hover{
+    text-decoration: underline;
 }
 

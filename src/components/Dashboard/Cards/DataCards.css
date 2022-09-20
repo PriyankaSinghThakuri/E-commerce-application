@@ -1,0 +1,31 @@
+.card{
+    border: 0;
+    margin-left: 16rem;
+    background-color: white!important;
+    display: inline-block;
+}
+.card-cont{
+    height:8rem;
+    width:15rem;
+    border:2px solid black;
+    border: 0;
+    background-color: whitesmoke;
+    border-radius: 7px;
+    box-shadow: 2px white;
+    margin: 0rem 3rem 0rem 1rem; 
+    display: inline-block;
+}
+h5{
+    padding-top: 1rem;
+}
+.card-body{
+    margin-top: 2rem;
+}
+.baricon{
+    margin-right: 4rem;
+}
+.card{
+    display: flex;
+    flex-direction: row;
+}
+    

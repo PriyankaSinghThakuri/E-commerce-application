@@ -33,9 +33,9 @@ const Signin = () => {
     e.preventDefault();
     try {
       alert("Successfully Logged in");
-      auth.login(email, password);
-      // 👇️ navigate to /profile
-      navigate("/e-commerce-application");
+      auth.login(email);
+      // 👇️ navigate to /dashboard
+      navigate("/dashboard");
     } catch (error) {
       alert("Failed to login");
     }

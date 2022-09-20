@@ -1,0 +1,33 @@
+[
+    {
+      "image":
+        "http://localhost:3000/e-commerce-application/assets/produtcs_images/Topsellerimages/macair1.jpg",
+      "prodname": "Apple MacBook Air 13-in with M1 chip/256GB",
+      "price": "रू 154,999"
+    },
+    {
+      "image":
+        "http://localhost:3000/e-commerce-application/assets/produtcs_images/Topsellerimages/Lenovo1.jpg",
+      "prodname": " LENOVO IDEAPAD 3 RYZEN 5-5500U/8GB RAM/256GB NVME SSD/15.6FHD/WIN11",
+      "price": "रू 71,999"
+    },
+    {
+      "image":
+        "http://localhost:3000/e-commerce-application/assets/produtcs_images/Topsellerimages/acer1.jpg",
+      "prodname": "Acer Aspire 5 A515-45-ROXA / AMD Ryzen 5-5500U / 8GB RAM / 256GB SSD / 1TB HDD / 15.6″ FHD",
+      "price": "रू 68,990"
+    },
+    {
+      "image":
+        "http://localhost:3000/e-commerce-application/assets/produtcs_images/Topsellerimages/Dell1.jpg",
+      "prodname":
+        "Dell Inspiron 15 3511 / i5 1135G7 / 8GB / 512 SSD / NVIDIA MX 350 2GB GDDR5 / 15.6 FHD",
+      "price": "रू 82,990"
+    },
+    {
+      "image":
+        "http://localhost:3000/e-commerce-application/assets/produtcs_images/Topsellerimages/HP.jpg",
+      "prodname": "HP Victus 15-fa0031dx Gaming- i5-12450H 12th Gen/8GB RAM/512GB SSD/15.6 Full HD 144Hz/ NVIDIA GTX 1650 4GB Laptop",
+      "price": "रू 106,990"
+    }
+  ]

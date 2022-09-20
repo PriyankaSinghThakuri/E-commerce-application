@@ -1,14 +1,10 @@
 .card-container{
-   margin: 3rem 0rem 1rem 20rem;
+   margin: 3rem 0rem 1rem 18rem;
 }
-
-.card{
-    width: 25rem;
-    height: 18rem;
+.customer-card{
     background-color: rgb(224, 220, 220);
     border-radius: 10px;
 }
-
 .card-title{
     font-weight: 600;
     font-size: 20px;
