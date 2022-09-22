@@ -43,20 +43,6 @@ table {
     display: flex;
     gap: 5px;
   }
-  
-   /* form {
-    display: flex;
-    gap: 5px;
-  }
-  
-  form td:last-child {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  
-  form * {
-    font-size: 19px;
-  }  */
   #cust-name{
     height: 3.5rem;
     width: 20rem;

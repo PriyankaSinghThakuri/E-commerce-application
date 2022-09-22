@@ -7,7 +7,6 @@ import Signup from "./components/Signup/Signup";
 import Dashboard from "./components/Dashboard/Dashboard";
 import NoMatchPage from "./components/NoMatchPage/NoMatchPage";
 import Users from "./components/Users/Customers";
-import Admin from "./components/Admin/Admin";
 import Home from "./components/Home/Home";
 import Customers from "./components/Users/Customers";
 import FlashSale from "./components/Products/FlashSale/FlashSale";
@@ -34,9 +33,7 @@ function App() {
           /> */}
           <Route path="dashboard" element={<Dashboard />} />
           <Route path="customers" element={<Customers />} />
-          <Route path="admin" element={<Admin />}>
-            <Route path="users" element={<Users />} />
-          </Route>
+          <Route path="users" element={<Users />} />
           <Route path="flashsale" element={<FlashSale />} />
           <Route path="termsconditions" element={<TermsConditions />} />
           <Route path="/trackmyorder" component={Trackorder} />

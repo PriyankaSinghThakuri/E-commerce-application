@@ -1,4 +1,3 @@
-/* css of whole navbar */
 .navbar{
     position: absolute;
     font-size: 15px;
@@ -12,14 +11,14 @@
     justify-content: space-evenly;
     padding: 15px;
   }
-/* css of navbar components */
+
 .navbar-nav{
     filter: blur(0);
     list-style: none;
     margin-left: 47.5rem;
     align-items: center;
 }
-/* css of navbar inner components */
+
 .navbar-nav a{
     margin: 0rem 1rem 0rem 0rem; 
     cursor: pointer;
@@ -30,7 +29,6 @@
     text-decoration: underline;
 }
 
-/* css of new component of navbar */
 #gadgetzone_new {
     background-color: green!important;
     border-radius: 10px;
@@ -85,8 +83,7 @@
     color: rgb(105, 42, 164);
 }
 
-/* media queries for Responsive css */
-/* Responsive css for 800px screen */
+
 @media screen and (max-width: 800px){
     .navbar{
         width: 10%;
@@ -113,8 +110,6 @@
     }
   }
 
-/* Responsive css */
-/* Responsive css for 360px screen */
 @media screen and (max-width: 360px){
     .navbar{
         width: 19%;
